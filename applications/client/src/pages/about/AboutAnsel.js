@@ -1,14 +1,19 @@
 import React from 'react';
-import anselPic from '../../images/default about picture.png'
+import anselPic from '../../images/picture of ansel.PNG'
 
 const AboutAnsel = () => {
     return (
         <div style={{ padding: "0 1% 0 1%" }}>
-            <img src={anselPic} width="250px" height="250px" alt="default"/>
+            <img src={anselPic} width="250px" height="250px" alt="picture of ansel"/>
 
-            <h1>[Name]</h1>
-            <h2>Role: [Role]</h2>
-            <p>[Description]</p>
+            <h1>Ansel Ngai</h1>
+            <h2>Role: None</h2>
+            <p>
+                Hello. I like playing video games. 
+                At the moment, I'm particularly enamored with the North American release of Lost Ark, 
+                and I am excited for the global release of Elden Ring.
+                I often watch Twitch and odd videos on YouTube.
+            </p>
         </div>
     );
 }
