@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/about/About';
@@ -14,6 +15,19 @@ import AboutAnsel from './pages/about/AboutAnsel';
  * 4) Finally, add the page to the Routes section beneath the links */
 
 function App() {
+  const [data, setData] = React.useState(null);
+
+  // Used for testing if React is able to connect with Express
+  React.useEffect(() => {
+    fetch("/api")
+    .then((res) => res.json())
+    .then((data) => setData(data.message));
+  }, []);
+  
+  // Used for testing if React is able to connect with Express
+  // This goes in return().
+  // <p>{!data ? "setData not yet set" : data}</p>
+
   return (
     <Router>
         <ul>
