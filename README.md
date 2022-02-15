@@ -1,6 +1,6 @@
 # CSC648-spring22-01-01 Repository
 
-## Application URL: 
+## Application URL: TODO
 
 
 ## Please do the following steps before completing Milestone 0.
@@ -17,8 +17,9 @@
 3. Fill out the table below
 
 
-| Student Name |      Student Email    |  GitHub Username | Stundet's role 
-|    :---:     |     :---:             |     :---:        |
-|Jocelyn Guzman| jguzman1@mail.sfsu.edu|   jguzman95      |  Team Leader
+| Student Name   |      Student Email    |  GitHub Username | Stundet's role |
+|    :---:       |     :---:             |     :---:        | :---:          |
+| Jocelyn Guzman | jguzman1@mail.sfsu.edu |   jguzman95  |  Team Leader |
+| Anthony Zhang  | azhang12@mail.sfsu.edu | anthonyzhang1 | Back End Lead |
 
 ## NO code needs to be stored in the root of your repository. You may rename the application folder if you like to your team's application name. But all source code related to your team's application should be stored inside the application folder.
