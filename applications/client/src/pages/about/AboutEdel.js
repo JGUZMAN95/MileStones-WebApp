@@ -8,7 +8,11 @@ const AboutEdel = () => {
 
             <h1>Edel Jhon Cenario</h1>
             <h2>Role: Front End Lead</h2>
-            <p>Hi, I'm Edel, but you can call me Ejay/EJ. I play guitar when I'm bored. I like bowling, hanging out with friends, and eating out.</p>
+            <p>
+              Hi, I'm Edel, but you can call me Ejay/EJ. 
+              I play guitar when I'm bored. 
+              I like bowling, hanging out with friends, and eating out.
+            </p>
         </div>
     );
 }
