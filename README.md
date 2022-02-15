@@ -17,7 +17,7 @@
 3. Fill out the table below
 
 
-| Student Name   |      Student Email    |  GitHub Username | Stundet's role |
+| Student Name   |      Student Email    |  GitHub Username | Student's role |
 |    :---:       |     :---:             |     :---:        | :---:          |
 | Jocelyn Guzman | jguzman1@mail.sfsu.edu |   jguzman95  |  Team Leader |
 | Anthony Zhang  | azhang12@mail.sfsu.edu | anthonyzhang1 | Back End Lead |
