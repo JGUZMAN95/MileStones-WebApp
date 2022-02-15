@@ -6,9 +6,11 @@ const AboutHira = () => {
         <div style={{ padding: "0 1% 0 1%" }}>
             <img src={hiraPic} width="250px" height="250px" alt="default"/>
 
-            <h1>[Name]</h1>
-            <h2>Role: [Role]</h2>
-            <p>[Description]</p>
+            <h1>Hira Afzal</h1>
+            <h2>Role: Github Master</h2>
+            <p>Hi, My name is Hira. I am a senior at SFSU. <br/>
+                I like reading, watching old movies and doing projects on photoshop.
+            </p>
         </div>
     );
 }
