@@ -6,9 +6,9 @@ const AboutEdel = () => {
         <div style={{ padding: "0 1% 0 1%" }}>
             <img src={edelPic} width="250px" height="250px" alt="default"/>
 
-            <h1>[Name]</h1>
-            <h2>Role: [Role]</h2>
-            <p>[Description]</p>
+            <h1>Edel Jhon Cenario</h1>
+            <h2>Role: Front End Lead</h2>
+            <p>Hi, I'm Edel, but you can call me Ejay/EJ. I play guitar when I'm bored. I like bowling, hanging out with friends, and eating out.</p>
         </div>
     );
 }
