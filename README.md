@@ -21,5 +21,6 @@
 |    :---:       |     :---:             |     :---:        | :---:          |
 | Jocelyn Guzman | jguzman1@mail.sfsu.edu |   jguzman95  |  Team Leader |
 | Anthony Zhang  | azhang12@mail.sfsu.edu | anthonyzhang1 | Back End Lead |
+| Ansel Ngai     | angai1@mail.sfsu.edu | ngaiansel | Flex Position |
 
 ## NO code needs to be stored in the root of your repository. You may rename the application folder if you like to your team's application name. But all source code related to your team's application should be stored inside the application folder.
