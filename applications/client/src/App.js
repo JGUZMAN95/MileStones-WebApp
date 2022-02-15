@@ -1,7 +1,12 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/about/About';
+import AboutJocelyn from './pages/about/AboutJocelyn';
+import AboutEdel from './pages/about/AboutEdel';
 import AboutAnthony from './pages/about/AboutAnthony';
+import AboutMiroslav from './pages/about/AboutMiroslav';
+import AboutHira from './pages/about/AboutHira';
+import AboutAnsel from './pages/about/AboutAnsel';
 
 /* 1) To create a new page, create a new .js file in the pages folder
  * 2) Next, in this file, import the .js file using its path as shown above
@@ -20,8 +25,14 @@ function App() {
       <Routes>
         {/* Add a route to a page here */}
         <Route path="/" element={<Home />}/>
+
         <Route path="/about" element={<About />}/>
+        <Route path="/about/jocelyn" element={<AboutJocelyn />}/>
+        <Route path="/about/edel" element={<AboutEdel />}/>
         <Route path="/about/anthony" element={<AboutAnthony />}/>
+        <Route path="/about/miroslav" element={<AboutMiroslav />}/>
+        <Route path="/about/hira" element={<AboutHira />}/>
+        <Route path="/about/ansel" element={<AboutAnsel />}/>
       </Routes>
     </Router>
   );
