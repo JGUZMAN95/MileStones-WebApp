@@ -12,12 +12,13 @@ function App() {
   return (
     <Router>
         <ul>
+          {/* Add links to the navbar here */}
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
-          {/* Add links to the navbar here */}
         </ul>
 
       <Routes>
+        {/* Add a route to a page here */}
         <Route path="/" element={<Home />}/>
         <Route path="/about" element={<About />}/>
         <Route path="/about/anthony" element={<AboutAnthony />}/>
