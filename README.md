@@ -19,7 +19,7 @@
 
 | Student Name      |      Student Email     |  GitHub Username | Student's role |
 |    :---:          |     :---:              |     :---:        | :---:          |
-| Jocelyn Guzman    | jguzman1@mail.sfsu.edu | jguzman95        | Team Leader    |
+| Jocelyn Guzman    | jguzman1@mail.sfsu.edu | jguzman95        | Team Lead      |
 | Anthony Zhang     | azhang12@mail.sfsu.edu | anthonyzhang1    | Back End Lead  |
 | Ansel Ngai        | angai1@mail.sfsu.edu   | ngaiansel        | None           |
 | Hira Afzal        | hafzal1@mail.sfsu.edu  | hiraaf           | Github Master  |
