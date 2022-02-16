@@ -32,7 +32,7 @@ const AboutEdel = () => {
         <ProfileUi 
             imgUrl={edelPic} 
             name='EJ Cenario' 
-            designation='Front End Leader' 
+            designation='Front End Lead' 
             />
 
 
