@@ -1,6 +1,6 @@
 # CSC648-spring22-01-01 Repository
 
-## Application URL: TODO
+## Application URL: http://184.72.11.58:3000/
 
 
 ## Please do the following steps before completing Milestone 0.
@@ -19,9 +19,9 @@
 
 | Student Name      |      Student Email     |  GitHub Username | Student's role |
 |    :---:          |     :---:              |     :---:        | :---:          |
-| Jocelyn Guzman    | jguzman1@mail.sfsu.edu | jguzman95        |  Team Leader   |
-| Anthony Zhang     | azhang12@mail.sfsu.edu | anthonyzhang1.   | Back End Lead  |
-| Ansel Ngai        | angai1@mail.sfsu.edu   | ngaiansel.       | None           |
+| Jocelyn Guzman    | jguzman1@mail.sfsu.edu | jguzman95        | Team Leader    |
+| Anthony Zhang     | azhang12@mail.sfsu.edu | anthonyzhang1    | Back End Lead  |
+| Ansel Ngai        | angai1@mail.sfsu.edu   | ngaiansel        | None           |
 | Hira Afzal        | hafzal1@mail.sfsu.edu  | hiraaf           | Github Master  |
 | Edel Jhon Cenario | ecenario@mail.sfsu.edu | kurtina09        | Front End Lead |
 | Miroslav Stavrev  | mstavrev@mail.sfsu.edu | blazeblast4      | Scrum Master   |
