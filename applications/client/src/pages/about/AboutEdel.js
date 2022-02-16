@@ -27,7 +27,13 @@ const AboutEdel = () => {
         // </div>
 
         <div style = {
-            { marginLeft: 800}
+            {
+                display: 'flex',
+                textAlign: 'center',
+              justifyContent: 'center',
+              alignItems: 'center',
+                alignSelf: 'center',
+            position: 'relative'}
         }> 
         <ProfileUi 
             imgUrl={edelPic} 
@@ -37,8 +43,14 @@ const AboutEdel = () => {
 
 
         <p style = {
-            {textAlign: "center",
-            marginLeft: -845}
+            { 
+                paddingTop: 400,
+                textAlign: 'center',
+              justifyContent: 'center',
+              alignItems: 'center',
+                alignSelf: 'center',
+                position: 'absolute'
+            }
         }>
         Hi, I 'm Edel, but you can call me Ejay. <br/>
         I play guitar when I 'm bored. <br/>
