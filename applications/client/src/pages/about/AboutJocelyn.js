@@ -7,7 +7,7 @@ const AboutJocelyn = () => {
             <img src={jocelynPic} width="250px" height="250px" alt="default"/>
 
             <h1>Jocelyn Guzman</h1>
-            <h2>Role: Team Leader</h2>
+            <h2>Role: Team Lead</h2>
             <p>Hello World, My name is Jocelyn Guzman,<p>
             </p> I am currently a senior at San Francisco State University.
                 I love to shop, socialize, binge watch shows, cook, exercise, hike, and dance.</p>
