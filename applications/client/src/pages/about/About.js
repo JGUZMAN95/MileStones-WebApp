@@ -13,11 +13,12 @@ const About = () => {
             Team 1
             </h2>
 
-            <button onClick={() => navigate('jocelyn')}>Jocelyn Guzman</button><br/>
-            <button onClick={() => navigate('edel')}>Edel Jhon Cenario</button><br/>
-            <button onClick={() => navigate('anthony')}>Anthony Zhang</button><br/>
-            <button onClick={() => navigate('miroslav')}>Miroslav Stavrev</button><br/>
-            <button onClick={() => navigate('hira')}>Hira Afzal</button><br/>
+            <br/>
+            <button onClick={() => navigate('jocelyn')}>Jocelyn Guzman</button><br/><br/>
+            <button onClick={() => navigate('edel')}>Edel Jhon Cenario</button><br/><br/>
+            <button onClick={() => navigate('anthony')}>Anthony Zhang</button><br/><br/>
+            <button onClick={() => navigate('miroslav')}>Miroslav Stavrev</button><br/><br/>
+            <button onClick={() => navigate('hira')}>Hira Afzal</button><br/><br/>
             <button onClick={() => navigate('ansel')}>Ansel Ngai</button>
         </div>
     );
