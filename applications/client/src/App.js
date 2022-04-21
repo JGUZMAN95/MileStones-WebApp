@@ -12,6 +12,9 @@ import SignIn from "./components/login/login";
 import Register from "./components/Register/register";
 import ParentRegister from "./components/Register/ParentRegister";
 import ProviderRegister from "./components/Register/ProviderRegister";
+import Profile from "./components/profile/profile.js";
+
+
 /* 1) To create a new page, create a new .js file in the pages folder
  * 2) Next, in this file, import the .js file using its path as shown above
  * 3) If you want to add the page to the navbar, put it in the <ul> part below
@@ -39,6 +42,7 @@ function App() {
           <li><Link to="/about">About</Link></li>
           <li><Link to="/login">Log In</Link></li>
           <li><Link to="/register">Sign Up</Link></li>
+          <li><Link to="/profile">Profile</Link></li>
 
 
         </ul>
@@ -50,6 +54,7 @@ function App() {
         <Route path ="/register" element={<Register />}/>
         <Route path ="/ParentRegister" element={<ParentRegister />}/>
         <Route path ="/ProviderRegister" element={<ProviderRegister />}/>
+        <Route path="/profile" element={<Profile />}/>
 
         <Route path="/about" element={<About />}/>
         <Route path="/about/jocelyn" element={<AboutJocelyn />}/>
