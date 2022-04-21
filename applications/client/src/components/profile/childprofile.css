@@ -59,7 +59,7 @@ p {
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 1);
   width: 1440px;
-  height: 1024px;
+  height: 824px;
 }
 
 .group-095 {
@@ -73,7 +73,7 @@ p {
 }
 
 .group-898 {
-  height: 100%;
+  height: 135%;
 }
 
 .childstoggle {
@@ -112,8 +112,10 @@ p {
 .line-4 {
   border: 1px solid rgba(0, 0, 0, 0.56);
   transform: rotate(-90deg);
-  width: 65.01px;
+  width: 120px;
   height: 1px;
+  top: 100px;
+  margin: 3em;
 }
 
 .frame-17 {

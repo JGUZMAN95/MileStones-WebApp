@@ -182,13 +182,13 @@ p {
 
 .txt-232 {
   position: absolute;
-  top: 453px;
-  left: 473px;
+  top: 460px;
+  left: 465px;
   font-size: 20px;
   font-family: Poppins, sans-serif;
   font-weight: 400;
   color: rgba(221, 100, 100, 1);
-  width: 166px;
+  width: 200px;
   height: 30px;
   word-wrap: break-word;
 }
