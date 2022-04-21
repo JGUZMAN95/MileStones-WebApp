@@ -37,8 +37,8 @@ p {
           rgba(235, 252, 244, 1) 0%,
           rgba(174, 194, 245, 1) 100%
   );
-  width: 1440px;
-  height: 1024px;
+  width: 1240px;
+  height: 870px;
 }
 
 .group-17 {
@@ -82,10 +82,10 @@ p {
 .txt-9109 {
   position: absolute;
   top: 138px;
-  left: 751px;
+  left: 800px;
   font-size: 40px;
   font-family: Archivo Black, sans-serif;
-  font-weight: 400;
+  font-weight: bold;
   color: rgba(0, 0, 0, 1);
   width: 343px;
   height: 44px;
@@ -283,8 +283,8 @@ p {
   position: absolute;
   top: 317px;
   left: 151px;
-  width: 512px;
-  height: 512px;
+  width: 450px;
+  height: 450px;
 }
 
 .signup-parent-provider {
