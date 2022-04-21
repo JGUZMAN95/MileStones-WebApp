@@ -20,11 +20,10 @@
 | Student Name      |      Student Email     |  GitHub Username | Student's role |
 |    :---:          |     :---:              |     :---:        | :---:          |
 | Jocelyn Guzman    | jguzman1@mail.sfsu.edu | jguzman95        | Team Lead      |
-| Anthony Zhang     | azhang12@mail.sfsu.edu | anthonyzhang1    | Back End Lead  |
-| Ansel Ngai        | angai1@mail.sfsu.edu   | ngaiansel        | None           |
+| Ansel Ngai        | angai1@mail.sfsu.edu   | ngaiansel        | Scrum Master   |
 | Hira Afzal        | hafzal1@mail.sfsu.edu  | hiraaf           | Github Master  |
 | Edel Jhon Cenario | ecenario@mail.sfsu.edu | kurtina09        | Front End Lead |
-| Miroslav Stavrev  | mstavrev@mail.sfsu.edu | blazeblast4      | Scrum Master   |
+| Miroslav Stavrev  | mstavrev@mail.sfsu.edu | blazeblast4      | Back End Lead  |
 
 
 
