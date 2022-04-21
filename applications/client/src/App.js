@@ -13,6 +13,7 @@ import Register from "./components/Register/register";
 import ParentRegister from "./components/Register/ParentRegister";
 import ProviderRegister from "./components/Register/ProviderRegister";
 import Profile from "./components/profile/profile.js";
+import ChildProfile from "./components/profile/childprofile.js";
 
 
 /* 1) To create a new page, create a new .js file in the pages folder
@@ -43,6 +44,7 @@ function App() {
           <li><Link to="/login">Log In</Link></li>
           <li><Link to="/register">Sign Up</Link></li>
           <li><Link to="/profile">Profile</Link></li>
+          <li><Link to="/childprofile">Child Profile</Link></li>
 
 
         </ul>
@@ -55,6 +57,7 @@ function App() {
         <Route path ="/ParentRegister" element={<ParentRegister />}/>
         <Route path ="/ProviderRegister" element={<ProviderRegister />}/>
         <Route path="/profile" element={<Profile />}/>
+        <Route path="/childprofile" element={<ChildProfile />}/>
 
         <Route path="/about" element={<About />}/>
         <Route path="/about/jocelyn" element={<AboutJocelyn />}/>
