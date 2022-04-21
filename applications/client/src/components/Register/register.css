@@ -38,15 +38,16 @@ p {
   position: relative;
   background-color: rgba(255, 255, 255, 1);
   width: 1440px;
-  height: 1024px;
+  height: 724px;
+  left: 20px;
 }
 
 .background {
-  position: absolute;
+  position: relative;
   top: 0px;
   left: -34px;
   width: 1033px;
-  height: 100%;
+  height: 85%;
 }
 
 .rectangle-3 {
@@ -58,7 +59,7 @@ p {
     rgba(235, 252, 244, 1) 15%,
     rgba(174, 194, 245, 0.47) 100%
   );
-  transform: rotate(NaNdeg);
+  /*transform: rotate(NaNdeg);*/
   width: 1000px;
   border-radius: 50px;
   height: 100%;
@@ -68,26 +69,27 @@ p {
   position: absolute;
   top: 317px;
   left: 749px;
-  width: 512px;
-  height: 512px;
+  width: 312px;
+  height: 312px;
 }
 
 .txt-957 {
   position: absolute;
   top: 165px;
-  left: 255px;
-  font-size: 40px;
+  left: 200px;
+  font-size: 55px;
   font-family: Archivo Black, sans-serif;
-  font-weight: 400;
+  font-weight: bolder;
   color: rgba(0, 0, 0, 1);
-  width: 323px;
-  height: 44px;
+  width: 500px;
+  height: 99px;
   word-wrap: break-word;
 }
 
 .group-075 {
   position: absolute;
-  top: 489px;
+  left: 200px;
+  top: 389px;
   none: 0px;
   padding: 5px 12px 5px 21px;
   box-sizing: border-box;
@@ -116,7 +118,8 @@ p {
 
 .group-467 {
   position: absolute;
-  top: 413px;
+  top: 319px;
+  left: 200px;
   none: 0px;
   padding: 15px 277px 5px 21px;
   box-sizing: border-box;
@@ -140,7 +143,7 @@ p {
 
 .txt-195 {
   position: absolute;
-  top: 553px;
+  top: 453px;
   left: 255px;
   font-size: 20px;
   font-family: Poppins, sans-serif;
@@ -153,7 +156,7 @@ p {
 
 .toggle {
   position: absolute;
-  top: 64px;
+  top: -36px;
   left: 0px;
   padding: 491px 1196px 396px 195px;
   box-sizing: border-box;
@@ -180,7 +183,7 @@ p {
 
 .txt-232 {
   position: absolute;
-  top: 553px;
+  top: 453px;
   left: 473px;
   font-size: 20px;
   font-family: Poppins, sans-serif;
@@ -193,7 +196,7 @@ p {
 
 .frame-14 {
   position: absolute;
-  top: calc(50% - 40px / 2 + 140px);
+  top: calc(50% - 40px / 2 + 155px);
   left: calc(50% - 452px / 2 - 298px);
   padding: 9px;
   box-sizing: border-box;
