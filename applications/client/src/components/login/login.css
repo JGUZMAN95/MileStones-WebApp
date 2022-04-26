@@ -97,6 +97,10 @@ p {
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
   width: 442px;
   height: 43px;
+  font-size: 20px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.58);
 }
 
 .txt-362 {
@@ -119,15 +123,19 @@ p {
   position: absolute;
   top: 319px;
   left: 200px;
-  none: 0px;
-  padding: 15px 277px 5px 21px;
+  display: inline-block;
+  padding: 5px 12px 5px 21px;
   box-sizing: border-box;
-  text-align: center;
+  margin: 8px 0;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
   width: 442px;
   height: 43px;
+  font-size: 20px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.58);
 }
 
 .txt-8109 {
@@ -204,18 +212,14 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   width: 452px;
   height: 40px;
-}
 
-.txt-196 {
   font-size: 20px;
   font-family: Poppins, sans-serif;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.52);
-  text-align: center;
-  width: 433px;
-  height: 21px;
-  word-wrap: break-word;
+  color: rgba(0, 0, 0, 0.5);
 }
+
+
 
 .teacher-21 {
   position: absolute;
