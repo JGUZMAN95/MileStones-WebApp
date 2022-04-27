@@ -15,6 +15,7 @@ import ProviderRegister from "./components/Register/ProviderRegister";
 import Profile from "./components/profile/profile.js";
 import ChildProfile from "./components/profile/childprofile.js";
 import Chat from "./components/chat/chat.js";
+import ViewPosts from"./components/posts/viewPosts";
 
 
 /* 1) To create a new page, create a new .js file in the pages folder
@@ -47,6 +48,7 @@ function App() {
           <li><Link to="/profile">Profile</Link></li>
           <li><Link to="/childprofile">Child Profile</Link></li>
           <li><Link to="/chat">Chats</Link></li>
+          <li><Link to="/viewPosts">Posts</Link></li>
 
 
         </ul>
@@ -61,6 +63,8 @@ function App() {
         <Route path="/profile" element={<Profile />}/>
         <Route path="/childprofile" element={<ChildProfile />}/>
         <Route path="/chat" element={<Chat />}/>
+        <Route path="/viewPosts" element={<ViewPosts />}/>
+
 
         <Route path="/about" element={<About />}/>
         <Route path="/about/jocelyn" element={<AboutJocelyn />}/>
@@ -69,6 +73,7 @@ function App() {
         <Route path="/about/miroslav" element={<AboutMiroslav />}/>
         <Route path="/about/hira" element={<AboutHira />}/>
         <Route path="/about/ansel" element={<AboutAnsel />}/>
+        <Route path="/register/signUp" element={<Home/>}/>
       </Routes>
     </Router>
   );
