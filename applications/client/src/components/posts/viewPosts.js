@@ -5,7 +5,7 @@ import "./viewPosts.css"
         function schedule() {
             alert('You clicked me!');
         }
-        async function printProviders()
+        async function printProviders(){}
         return (
             <div className="search-view-posts flex-col-hstart-vstart clip-contents">
                 <div className="group-547">
