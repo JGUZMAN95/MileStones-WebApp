@@ -2,9 +2,81 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Archivo Black:wght@400&display=swap");
 
+.profile {
+
+}
+.profile-box{
+  border: 1px solid;
+  margin-left: 6em;
+  width: 300px;
+  height: 550px;
+  float:left;
+
+}
+.icon{
+  width: 300px;
+  height: 300px;
+}
+.profile-text {
+  color: gray;
+}
+.rec-box{
+  border: 1px solid;
+  width: 800px;
+  height: 510px;
+  margin-left: 4em;
+  float: left;
+  padding: 20px;
+}
+.button{
+  width: 735px;
+  height: 120px;
+  margin-left: 2em;
+}
+.education-button{
+  width: 367.5px;
+  height: 120px;
+}
+.edu-bttn, .act-bttn {
+  width: 367.5px;
+  height: 120px;
+  font-size: 40px;
+  color:black;
+  background: gainsboro;
+  font-weight: bold;
+  border-radius: 20px;
+}
+.edu-bttn:hover,.act-bttn:hover {
+  background: gray;
+}
+.edu-bttn:active,.act-bttn:active {
+  background: dimgray;
+}
+.edu-bttn {
+  margin-left: -15px;
+}
+.act-bttn {
+  margin-left: 15px;
+}
+/*
+.act-bttn{
+  width: 367.5px;
+  height: 120px;
+  font-size: 40px;
+  background: gainsboro;
+} */
+.activities-button {
+  width: 367.5px;
+  height: 120px;
+  margin-left: 23em;
+  margin-top: -7.5em;
+}
+
+
 p {
   margin: 0;
 }
+
 
 .clip-contents {
   overflow: hidden;
@@ -63,13 +135,17 @@ p {
 }
 
 .group-095 {
-  height: 100%;
+  width: 248px;
+  height: 624px;
+  border: 2px solid;
+  left: 100px;
 }
 
 .group-16 {
-  width: 248px;
-  height: 624.14px;
-  margin-right: 156px;
+  width: 250px;
+  height: 250px;
+  margin-right: 100px;
+  margin-top: -200px;
 }
 
 .group-898 {
