@@ -10,7 +10,7 @@ p {
 input:focus,
 select:focus,
 textarea:focus,
-button: focus {
+button:focus {
     outline: none;
     box-shadow: none;
 }
@@ -275,7 +275,7 @@ button: focus {
     left: 42px;
     right: 0px;
     font-size: 24px;
-    font-family: M PLUS 2, sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
     color: rgba(0, 0, 0, 1);
     text-align: center;

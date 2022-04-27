@@ -21,9 +21,8 @@
   color: gray;
 }
 .rec-box{
-  border: 1px solid;
   width: 800px;
-  height: 510px;
+  height: 650px;
   margin-left: 4em;
   float: left;
   padding: 20px;
@@ -42,15 +41,15 @@
   height: 120px;
   font-size: 40px;
   color:black;
-  background: gainsboro;
+  background: white;
   font-weight: bold;
   border-radius: 20px;
 }
 .edu-bttn:hover,.act-bttn:hover {
-  background: gray;
+  background: gainsboro;
 }
 .edu-bttn:active,.act-bttn:active {
-  background: dimgray;
+  background: darkgray;
 }
 .edu-bttn {
   margin-left: -15px;
@@ -71,6 +70,16 @@
   margin-left: 23em;
   margin-top: -7.5em;
 }
+
+.content-box{
+  border: 1px solid black;
+  margin-top: 2em;
+  width: 800px;
+  height: 510px;
+  background: gainsboro;
+
+}
+
 
 
 p {

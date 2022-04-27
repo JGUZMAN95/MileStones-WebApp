@@ -3,6 +3,25 @@ import "./childprofile.css"
 import icon from '../../images/monster.png'
 
 export default function ViewChildProfiles() {
+    function replace() {
+        document.getElementById("edu-content").innerHTML="Recommendations: ";
+
+        var i = document.getElementById(eduContent("edu"));
+
+        document.getElementById("act-content").innerText="";
+    }
+    function replaceact() {
+        document.getElementById("act-content").innerHTML="activities";
+        document.getElementById("edu-content").innerText="";
+    }
+    function eduContent() {
+        return(
+            <div className={"edu"} id={"edu"}>
+                <h1> hiiiii </h1>
+            </div>
+        )
+    }
+
   return (
       <div class={"float-container"} className={"profile"}>
         <div className={"profile-box"}>
@@ -16,20 +35,27 @@ export default function ViewChildProfiles() {
         <div className={"rec-box"}>
             <div class={"float-container"} className={'button'}>
               <div className={'education-button'}>
-                <button className={'edu-bttn'} onClick={''}>
+                <button type="button" className={'edu-bttn'} id = "bttn-1" onClick={replace}>
                   Education
                 </button>
               </div>
               <div className={'activities-button'}>
-                <button className={'act-bttn'} onClick={''}>
-                  Activites
+                <button type={"button"} className={'act-bttn'} id = "bttn-2" onClick={replaceact}>
+                  Activities
                 </button>
               </div>
             </div>
+            <div className={"content-box"} id={'content'}>
+            <div id={"edu-content"} style={{display: 'block'}} >
+                <p> Recommendations: </p>
+            </div>
+            <div id={"act-content"} style={{display: 'block'}} >
+                <p> </p>
+            </div>
+            </div>
         </div>
+
       </div>
-
-
-
   )
 }
+
