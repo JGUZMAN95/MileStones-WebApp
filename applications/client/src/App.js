@@ -14,7 +14,6 @@ import ParentRegister from "./components/Register/ParentRegister";
 import ProviderRegister from "./components/Register/ProviderRegister";
 import Profile from "./components/profile/profile.js";
 import ChildProfile from "./components/profile/childprofile.js";
-import Chat from "./components/chat/chat.js";
 import ViewPosts from"./components/posts/viewPosts";
 import Navbar from './components/Navbar';
 
@@ -54,7 +53,6 @@ function App() {
         <Route path ="/ProviderRegister" element={<ProviderRegister />}/>
 
         <Route path="/childprofile" element={<ChildProfile />}/>
-        <Route path="/chat" element={<Chat />}/>
         <Route path="/viewPosts" element={<ViewPosts />}/>
 
 */}
