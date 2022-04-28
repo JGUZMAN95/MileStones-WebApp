@@ -41,9 +41,17 @@ export default function CreateAccount() {
                         className="visibility-22"
                     /> */}
                 </input>
+
                 <p className="txt-269">Are you a Parent or Provider?</p>
-                <input className = 'rectangle-8' type = 'submit' value = 'Sign Up'></input>
-                
+                <div className="signup-parent-provider switch-field">
+                    <input type="radio" id="radio-one" name="switch-one" value="Parent" checked/>
+                    <label for="radio-one">Parent</label>
+                    <input type="radio" id="radio-two" name="switch-one" value="Provider" />
+                    <label for="radio-two">Provider</label>
+                </div>
+                <div className = 'rectangle-signup'>
+                  <input className = 'rectangle-8' type = 'submit' value = 'Sign Up'></input>
+                </div>
             </form>
 
             <img
@@ -59,17 +67,6 @@ export default function CreateAccount() {
                 alt="Not Found"
                 className="playtime-11"
             />
-            <div className="signup-parent-provider flex-col-hstart-vstart">
-                <p className="txt-160">Parent</p>
-                <div className="group-1016 flex-row">
-                    <img
-                        src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/1yminuy1bia-I542%3A202%3B542%3A182?alt=media&token=3773bb17-5ad8-4e8a-b591-908e07f89d34"
-                        alt="Not Found"
-                        className="rectangle-11"
-                    />
-                    <p className="txt-525">Provider</p>
-                </div>
-            </div>
         </div>
     )
 }
