@@ -5,24 +5,14 @@ import icon from '../../images/monster.png'
 export default function ViewChildProfiles() {
     function replace() {
         document.getElementById("edu-content").innerHTML="Recommendations: ";
-
-        var i = document.getElementById(eduContent("edu"));
-
         document.getElementById("act-content").innerText="";
     }
     function replaceact() {
         document.getElementById("act-content").innerHTML="activities";
         document.getElementById("edu-content").innerText="";
     }
-    function eduContent() {
-        return(
-            <div className={"edu"} id={"edu"}>
-                <h1> hiiiii </h1>
-            </div>
-        )
-    }
-
   return (
+
       <div class={"float-container"} className={"profile"}>
         <div className={"profile-box"}>
           <img src = {icon}

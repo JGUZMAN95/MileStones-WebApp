@@ -46,6 +46,8 @@ function App() {
         <Route path ="/login" element ={<SignIn />} />
         <Route path="/profile" element={ <Profile />} />
         <Route path ="/register" element={<Register />}/>
+        <Route path="/childprofile" element={<ChildProfile />}/>
+        <Route path="/viewPosts" element={<ViewPosts />}/>
         {/* <Route path="/" element={<Home />}/>
  
         

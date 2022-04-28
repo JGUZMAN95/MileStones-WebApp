@@ -1,179 +1,52 @@
 /* Profile */
+.side-box{
+  margin-left: 6em;
+  width: 300px;
+  height: 550px;
+  float:left;
 
-@import url("https://fonts.googleapis.com/css2?family=Archivo Black:wght@400&display=swap");
-
-p {
-  margin: 0;
 }
-
-.clip-contents {
-  overflow: hidden;
+.button-sched,.button-serv {
+  width: 250px;
+  height: 60px;
+  margin-top: 30px;
 }
-
-.flex-col-hstart-vstart {
+.sch-bttn,.serv-bttn {
+  width: 250px;
+  height: 60px;
+  font-size: 35px;
+  font-weight: bold;
+  margin-left: 1em;
+  border-radius: 20px;
+  background: aliceblue;
+}
+.sch-bttn:hover,.serv-bttn:hover {
+  background: lightblue;
+}
+.sch-bttn:active,.serv-bttn:active {
+  background: aliceblue;
+}
+.contentbox{
+  width: 800px;
+  height: 650px;
+  margin-left: 4em;
+  float: left;
+  padding: 20px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+
+}
+.column1,.column2{
+  flex: 50%;
+  border-radius: 20px;
+  background: gainsboro;
 }
 
-.flex-row {
-  display: flex;
-  flex-direction: row;
+.month-content,.event-content {
+  border: 1px solid black;
+  width: 350px;
+  height: 450px;
+  margin-left: 1.5em;
+  background: white;
+  border-radius: 20px;
 }
 
-.flex-col {
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-hcenter {
-  justify-content: center;
-}
-
-.flex-col-hcenter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.flex-row-vcenter {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.profile {
-  padding: 47px 92px 173px 35px;
-  box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 1);
-  width: 1440px;
-  height: 1024px;
-}
-
-.group-225 {
-  margin-right: 44px;
-  box-sizing: border-box;
-  height: fit-content;
-}
-
-.group-20 {
-  padding: 29px 17px 20px 17px;
-  margin-bottom: 31px;
-  box-sizing: border-box;
-  border-radius: 30px;
-  background-color: rgba(174, 194, 245, 0.47);
-  height: 52px;
-  width: 100%;
-}
-
-.txt-1010 {
-  font-size: 40px;
-  font-family: Archivo Black, sans-serif;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 1);
-  text-align: center;
-  width: 212px;
-  word-wrap: break-word;
-}
-
-.group-21 {
-  padding: 25px 29px 24px 24px;
-  margin-bottom: 31px;
-  box-sizing: border-box;
-  border-radius: 30px;
-  background-color: rgba(174, 194, 245, 0.47);
-  height: 52px;
-  width: 100%;
-}
-
-.txt-382 {
-  font-size: 40px;
-  font-family: Archivo Black, sans-serif;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 1);
-  text-align: center;
-  word-wrap: break-word;
-}
-
-.group-22 {
-  padding: 25px 5px 24px 21px;
-  box-sizing: border-box;
-  border-radius: 30px;
-  background-color: rgba(174, 194, 245, 0.47);
-  height: 52px;
-  width: 100%;
-}
-
-.txt-382 {
-  font-size: 40px;
-  font-family: Archivo Black, sans-serif;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 1);
-  text-align: center;
-  word-wrap: break-word;
-}
-
-.group-19 {
-  padding: 38px 68px 88px 50px;
-  box-sizing: border-box;
-  background: linear-gradient(
-      0deg,
-      rgba(196, 196, 196, 0.56),
-      rgba(196, 196, 196, 0.56)
-    ),
-    url(https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/jhm4ctd9rz-525%3A223?alt=media&token=e13dd31d-a513-4c1f-bc02-a4b82669a506);
-  background-size: 100% 100%;
-  height: 100%;
-}
-
-.group-807 {
-  margin-bottom: 48px;
-  box-sizing: border-box;
-  width: fit-content;
-}
-
-.txt-620 {
-  font-size: 40px;
-  font-family: Archivo Black, sans-serif;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 1);
-  text-align: center;
-  word-wrap: break-word;
-  margin-right: 361px;
-}
-
-.txt-382 {
-  font-size: 40px;
-  font-family: Archivo Black, sans-serif;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 1);
-  text-align: center;
-  word-wrap: break-word;
-}
-
-.{
-  width: fit-content;
-}
-
-.rectangle-42 {
-  width: 341.27px;
-  margin-right: 174px;
-  height: 100%;
-}
-
-.rectangle-43 {
-  width: 341.27px;
-  height: 100%;
-}
-
-.welcome {
-  width: 209.7px;
-  height: 36.32px;
-  margin-right: 927px;
-}
-
-.image-1 {
-  width: 147px;
-  height: 100%;
-}
