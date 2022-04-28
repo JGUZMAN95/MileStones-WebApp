@@ -13,7 +13,8 @@ const Navbar = () => {
     <>
       <Nav>
         <NavLink to='/'>
-          { <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-milestone-achievements-flaticons-lineal-color-flat-icons.png"/> }
+            
+          { <img src="C:\Users\kurti\Desktop\csc648-spring22-01-Team01\applications\client\src\images\mission.png"/> }
         </NavLink>
         <Bars />
         <NavMenu>
