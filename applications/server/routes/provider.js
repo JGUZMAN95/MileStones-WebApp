@@ -23,4 +23,5 @@ providerRoutes.route("/provider").get(function (req, res) {
             res.json(result);
         });
 });
+
 module.exports = providerRoutes;

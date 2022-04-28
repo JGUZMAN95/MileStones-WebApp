@@ -9,34 +9,36 @@ const Providers = (props) => (
     </tr>
 );
     export default function SearchViewPosts() {
-        const [providers] = useState([]);
+        const [providers, setProviders] = useState([]);
 
         // This method fetches the records from the database.
         useEffect(() => {
             async function getProviders() {
-                const response = await fetch(`http://localhost:3001/provider`);
-
+                const response = await fetch(`http://localhost:3001/provider/`);
                 if (!response.ok) {
                     const message = `An error occurred: ${response.statusText}`;
                     window.alert(message);
                     return;
                 }
+                const providers = await response.json();
+                setProviders(providers);
             }
+
             getProviders();
             return;
         }, [providers.length]);
 
-            // This method will map out the records on the table
-            function providerList() {
-                return providers.map((provider) => {
-                    return (
-                        <Providers
-                            providers={provider}
-                            key={provider._id}
-                        />
-                    );
-                });
-            }
+        // This method will map out the records on the table
+        function providerList() {
+            return providers.map((provider) => {
+                return (
+                    <Providers
+                        providers={provider}
+                        key={provider._id}
+                    />
+                );
+            });
+        }
 
         return (
             /* <div className="search-view-posts flex-col-hstart-vstart clip-contents">
@@ -95,7 +97,18 @@ const Providers = (props) => (
                     className="user-icon"
                 />
             /divv>*/
-                <tbody>{providerList}</tbody>
+            <div>
+                <h3>Record List</h3>
+                <table className="table table-striped" style={{ marginTop: 20 }}>
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                    </tr>
+                    </thead>
 
-        )
+                    <tbody>{providerList()}</tbody>
+                </table>
+            </div>
+        );
     }
