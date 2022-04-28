@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/about/About';
 import AboutJocelyn from './pages/about/AboutJocelyn';
@@ -16,6 +16,7 @@ import Profile from "./components/profile/profile.js";
 import ChildProfile from "./components/profile/childprofile.js";
 import Chat from "./components/chat/chat.js";
 import ViewPosts from"./components/posts/viewPosts";
+import Navbar from './components/Navbar';
 
 
 /* 1) To create a new page, create a new .js file in the pages folder
@@ -39,33 +40,24 @@ function App() {
 
   return (
     <Router>
-        <ul>
-          {/* Add links to the navbar here */}
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/login">Log In</Link></li>
-          <li><Link to="/register">Sign Up</Link></li>
-          <li><Link to="/profile">Profile</Link></li>
-          <li><Link to="/childprofile">Child Profile</Link></li>
-          <li><Link to="/chat">Chats</Link></li>
-          <li><Link to="/viewPosts">Posts</Link></li>
-
-
-        </ul>
-
+      <Navbar />
       <Routes>
         {/* Add a route to a page here */}
-        <Route path="/" element={<Home />}/>
-        <Route path ="/login" element={<SignIn />}/>
+        <Route path='/'  element={< Home/> } />
+        <Route path ="/login" element ={<SignIn />} />
+        <Route path="/profile" element={ <Profile />} />
         <Route path ="/register" element={<Register />}/>
+        {/* <Route path="/" element={<Home />}/>
+ 
+        
         <Route path ="/ParentRegister" element={<ParentRegister />}/>
         <Route path ="/ProviderRegister" element={<ProviderRegister />}/>
-        <Route path="/profile" element={<Profile />}/>
+
         <Route path="/childprofile" element={<ChildProfile />}/>
         <Route path="/chat" element={<Chat />}/>
         <Route path="/viewPosts" element={<ViewPosts />}/>
 
-
+*/}
         <Route path="/about" element={<About />}/>
         <Route path="/about/jocelyn" element={<AboutJocelyn />}/>
         <Route path="/about/edel" element={<AboutEdel />}/>
@@ -73,7 +65,7 @@ function App() {
         <Route path="/about/miroslav" element={<AboutMiroslav />}/>
         <Route path="/about/hira" element={<AboutHira />}/>
         <Route path="/about/ansel" element={<AboutAnsel />}/>
-        <Route path="/register/signUp" element={<Home/>}/>
+        <Route path="/register/signUp" element={<Home/>}/> 
       </Routes>
     </Router>
   );
