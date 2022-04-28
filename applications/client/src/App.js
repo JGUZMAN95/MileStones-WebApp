@@ -16,6 +16,7 @@ import Profile from "./components/profile/profile.js";
 import ChildProfile from "./components/profile/childprofile.js";
 import ViewPosts from"./components/posts/viewPosts";
 import Navbar from './components/Navbar';
+import Footer from './pages/Footer';
 
 
 /* 1) To create a new page, create a new .js file in the pages folder
@@ -55,6 +56,7 @@ const App = () =>{
         <Route path="/about/ansel" element={<AboutAnsel />}/>
         <Route path="/register/signUp" element={<Home/>}/> 
       </Routes>
+      <Footer />
     </Router>
   );
 };
