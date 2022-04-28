@@ -1,4 +1,5 @@
 /* Profile */
+
 .side-box{
   margin-left: 6em;
   width: 300px;
@@ -30,7 +31,6 @@
   width: 800px;
   height: 650px;
   margin-left: 4em;
-  float: left;
   padding: 20px;
   display: flex;
 
