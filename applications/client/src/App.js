@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/about/About';
 import AboutJocelyn from './pages/about/AboutJocelyn';
@@ -23,19 +23,7 @@ import Navbar from './components/Navbar';
  * 3) If you want to add the page to the navbar, put it in the <ul> part below
  * 4) Finally, add the page to the Routes section beneath the links */
 
-function App() {
-  const [data, setData] = React.useState(null);
-
-  // Used for testing if React is able to connect with Express
-  React.useEffect(() => {
-    fetch("/api")
-    .then((res) => res.json())
-    .then((data) => setData(data.message));
-  }, []);
-  
-  // Used for testing if React is able to connect with Express
-  // This goes in return().
-  // <p>{!data ? "setData not yet set" : data}</p>
+const App = () =>{
 
   return (
     <Router>
@@ -69,6 +57,6 @@ function App() {
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;

@@ -1,16 +1,48 @@
-import React from "react"
+import React, { useEffect, useState } from "react";
+//import { Link } from "react-router-dom";
 import "./viewPosts.css"
 
+const Providers = (props) => (
+    <tr>
+        <td>{props.record.name}</td>
+        <td>{props.record.email}</td>
+    </tr>
+);
     export default function SearchViewPosts() {
-        function schedule() {
-            alert('You clicked me!');
-        }
-        async function printProviders(){}
+        const [providers] = useState([]);
+
+        // This method fetches the records from the database.
+        useEffect(() => {
+            async function getProviders() {
+                const response = await fetch(`http://localhost:3001/provider`);
+
+                if (!response.ok) {
+                    const message = `An error occurred: ${response.statusText}`;
+                    window.alert(message);
+                    return;
+                }
+            }
+            getProviders();
+            return;
+        }, [providers.length]);
+
+            // This method will map out the records on the table
+            function providerList() {
+                return providers.map((provider) => {
+                    return (
+                        <Providers
+                            providers={provider}
+                            key={provider._id}
+                        />
+                    );
+                });
+            }
+
         return (
-            <div className="search-view-posts flex-col-hstart-vstart clip-contents">
+            /* <div className="search-view-posts flex-col-hstart-vstart clip-contents">
                 <div className="group-547">
 
-                    <button onClick={schedule} className="info flex-row" >
+                    <button onClick={"schedule"} className="info flex-row" >
                         <div className="pictureofserivceprovider" />
                         <div className="group-30 flex-col">
                             <div className="group-867 flex-row">
@@ -62,6 +94,8 @@ import "./viewPosts.css"
                     alt="Not Found"
                     className="user-icon"
                 />
-            </div>
+            /divv>*/
+                <tbody>{providerList}</tbody>
+
         )
     }
