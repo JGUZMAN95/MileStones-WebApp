@@ -4,8 +4,8 @@ import "./viewPosts.css"
 
 const Providers = (props) => (
     <tr>
-        <td>{props.record.name}</td>
-        <td>{props.record.email}</td>
+        <td>{props.provider.name}</td>
+        <td>{props.provider.email}</td>
     </tr>
 );
     export default function SearchViewPosts() {
@@ -33,7 +33,7 @@ const Providers = (props) => (
             return providers.map((provider) => {
                 return (
                     <Providers
-                        providers={provider}
+                        provider={provider}
                         key={provider._id}
                     />
                 );
