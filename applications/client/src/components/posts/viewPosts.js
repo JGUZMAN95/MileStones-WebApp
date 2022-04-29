@@ -4,8 +4,11 @@ import "./viewPosts.css"
 
 const Providers = (props) => (
     <tr>
+        <div>
         <td>{props.provider.name}</td>
-        <td>{props.provider.email}</td>
+        <td>{props.provider.rate}</td>
+        <td>{props.provider.bio}</td>
+        </div>
     </tr>
 );
     export default function SearchViewPosts() {
@@ -103,7 +106,8 @@ const Providers = (props) => (
                     <thead>
                     <tr>
                         <th>Name</th>
-                        <th>Email</th>
+                        <th>Rate</th>
+                        <th>Bio</th>
                     </tr>
                     </thead>
 

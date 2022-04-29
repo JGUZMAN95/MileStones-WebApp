@@ -13,11 +13,12 @@ const ObjectId = require("mongodb").ObjectId;
 
 
 // This section will help you get a list of all the records.
-providerRoutes.route("/provider").get(function (req, res) {
+//need to get inform search bar
+providerRoutes.route("/posts").get(function (req, res) {
     let db_connect = dbo.getDb("Milestones");
     db_connect
-        .collection("ServiceProviders")
-        .find({})
+        .collection("Post")
+        .match({services: req.params.services})
         .toArray(function (err, result) {
             if (err) throw err;
             res.json(result);
@@ -37,5 +38,17 @@ providerRoutes.route("/register").post(function (req, response) {
       response.json(res);
     });
   });
+providerRoutes.route("/createPost").post(function(req,res){
+    let db_connect = dbo.getDb("Milestones");
+    let myObj = {
+        rate: req.body.rate,
+        expirence: req.body.expirence,
+        service:req.body.service
+    };
+    db_connect.collection("Post").insertOne(myObj, function(e,result){
+        if(e) throw err;
+        res.json(result);
+    });
+});
 
 module.exports = providerRoutes;

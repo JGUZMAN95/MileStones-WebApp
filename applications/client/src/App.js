@@ -16,6 +16,7 @@ import Profile from "./components/profile/profile.js";
 import ChildProfile from "./components/profile/childprofile.js";
 import ViewPosts from"./components/posts/viewPosts";
 import Navbar from './components/Navbar';
+import CreatePost from './components/posts/createPost';
 import Footer from './pages/Footer';
 
 
@@ -37,6 +38,7 @@ const App = () =>{
         <Route path ="/register" element={<Register />}/>
         <Route path="/childprofile" element={<ChildProfile />}/>
         <Route path="/viewPosts" element={<ViewPosts />}/>
+        <Route path="/createPost" element={<CreatePost/>}/>
         {/* <Route path="/" element={<Home />}/>
  
         
