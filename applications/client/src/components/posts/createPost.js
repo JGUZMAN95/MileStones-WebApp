@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./createPost.css"
 
 export default function CreatePost(){
@@ -20,7 +20,7 @@ export default function CreatePost(){
         // When a post request is sent to the create url, we'll add a new record to the database.
     const newPost = { ...form };
 
-    await fetch(`http://localhost:3001/posts/`, {
+    await fetch(`http://localhost:3001/createPost/`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -35,7 +35,7 @@ export default function CreatePost(){
     setForm({ service: "", expirence: "", rate: "" });
 }
 return(
-    <form>
+    <form onSubmit={onSubmit}>
     <input type="text" id ="service" value = {form.service}
            onChange={(e)=> updateForm({service: e.target.value})} placeHolder ='Service'></input>
     <input type="text" id ="expirence" value = {form.expirence}

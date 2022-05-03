@@ -43,7 +43,7 @@ providerRoutes.route("/createPost").post(function(req,res){
     let myObj = {
         rate: req.body.rate,
         expirence: req.body.expirence,
-        service:req.body.service
+        service: req.body.service,
     };
     db_connect.collection("Post").insertOne(myObj, function(e,result){
         if(e) throw err;

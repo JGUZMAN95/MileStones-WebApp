@@ -16,7 +16,7 @@ import Profile from "./components/profile/profile.js";
 import ChildProfile from "./components/profile/childprofile.js";
 import ViewPosts from"./components/posts/viewPosts";
 import Navbar from './components/Navbar';
-import CreatePost from './components/posts/createPost';
+import CreatePost from "./components/posts/createPost";
 import Footer from './pages/Footer';
 
 
