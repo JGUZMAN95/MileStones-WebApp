@@ -5,9 +5,12 @@ import "./viewPosts.css"
 const Providers = (props) => (
     <tr>
         <div>
-        <td>{props.provider.name}</td>
-        <td>{props.provider.rate}</td>
-        <td>{props.provider.bio}</td>
+            <td>{props.provider.name}</td>
+            <td>{props.provider.rate}</td>
+            <td>{props.provider.intro}</td>
+            <td>{props.provider.expirence}</td>
+            <td>{props.provider.service}</td>
+
         </div>
     </tr>
 );
@@ -17,7 +20,7 @@ const Providers = (props) => (
         // This method fetches the records from the database.
         useEffect(() => {
             async function getProviders() {
-                const response = await fetch(`http://localhost:3001/provider/`);
+                const response = await fetch(`http://localhost:3001/post/`);
                 if (!response.ok) {
                     const message = `An error occurred: ${response.statusText}`;
                     window.alert(message);
@@ -108,6 +111,8 @@ const Providers = (props) => (
                         <th>Name</th>
                         <th>Rate</th>
                         <th>Bio</th>
+                        <th>Expirence</th>
+                        <td>Services</td>
                     </tr>
                     </thead>
 
