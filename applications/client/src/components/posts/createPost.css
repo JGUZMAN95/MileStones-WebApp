@@ -1,0 +1,46 @@
+.createpost{
+    margin: auto;
+    display: block;
+    width: 1000px;
+    height: 1000px;
+}
+.exp-dropdown {
+    display: flex;
+    margin-left: -20px;
+}
+
+.formdiv{
+    margin: auto;
+    width: 900px;
+    height: 700px;
+    border: 1px solid black;
+    margin-top: 65px;
+}
+
+.name-cp, .service-cp, .expirence-cp, .tnp-cp, .submit-cp, .exp-one, .exp-two,.rate-cp {
+    margin: auto;
+    display: block;
+    width: 40%;
+    padding: 12px 20px;
+    left: 40px;
+    margin-top: 50px;
+}
+.rate-span {
+    display: flex;
+    margin-left: 30%;
+}
+
+.submit-cp {
+    font-size: 20px;
+    background: #256ce1;
+    color: white;
+}
+.submit-cp:hover {
+     transition: all 0.2s ease-in-out;
+     background: #fff;
+     color: #010606;
+ }
+
+
+
+
