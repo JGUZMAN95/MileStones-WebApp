@@ -26,7 +26,7 @@ const Navbar = () => {
           <NavLink to='/Profile' activeStyle>
             Services
         </NavLink>
-        <NavLink to='/Search' activeStyle>
+        <NavLink to='/viewPosts' activeStyle>
           Search
         </NavLink>
         </NavMenu>
