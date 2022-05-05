@@ -1,0 +1,27 @@
+<!-- <div>{props.provider.name}</div>
+        <div>{props.provider.rate}</div>
+        <div>{props.provider.intro}</div>
+        <div>{props.provider.expirence}</div>
+        <div>{props.provider.service}</div>
+
+
+        <div className='cards'>
+            <div className='cards__container'>
+            <div className='cards__wrapper'>
+            <ul className='cards__items'>
+            {providerList()}
+            </ul>
+            </div>
+            </div>
+            </div>
+
+            <CardItem
+            src='/babysit.jpg'
+            text={props.provider.name}
+            label={props.provider.service}
+            path='/services'
+
+                const rowData = [
+        providerList()
+    ];
+          /> -->
