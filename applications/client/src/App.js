@@ -14,7 +14,7 @@ import ParentRegister from "./components/Register/ParentRegister";
 import ProviderRegister from "./components/Register/ProviderRegister";
 import Profile from "./components/profile/profile.js";
 import ChildProfile from "./components/profile/childprofile.js";
-import ViewPosts from"./components/posts/viewPosts";
+import ViewPosts from"./pages/viewPosts";
 import Navbar from './components/Navbar';
 import CreatePost from "./components/posts/createPost";
 import Footer from './pages/Footer';

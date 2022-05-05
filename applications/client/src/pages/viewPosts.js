@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
 //import { Link } from "react-router-dom";
-import "./viewPosts.css"
+//import "./viewPosts.css"
+import './Cards.css';
+import CardItem from './CardItem';
 
 const Providers = (props) => (
-    <tr>
-        <div>
-            <td>{props.provider.name}</td>
-            <td>{props.provider.rate}</td>
-            <td>{props.provider.intro}</td>
-            <td>{props.provider.expirence}</td>
-            <td>{props.provider.service}</td>
+          <CardItem
+            src='/babysit.jpg'
+            text={props.provider.name}
+            label={props.provider.service}
+            path='/services'
+          />
 
-        </div>
-    </tr>
+        
 );
     export default function SearchViewPosts() {
         const [providers, setProviders] = useState([]);
@@ -47,6 +47,17 @@ const Providers = (props) => (
         }
 
         return (
+            <div className='cards'>
+            <div className='cards__container'>
+            <div className='cards__wrapper'>
+            <ul className='cards__items'>
+            {providerList()}
+            </ul>
+            </div>
+            </div>
+            </div>
+
+            /*
             <div>
                 <h3>Record List</h3>
                 <table className="table table-striped" style={{ marginTop: 20 }}>
@@ -59,9 +70,9 @@ const Providers = (props) => (
                         <th>Services</th>
                     </tr>
                     </thead>
-
                     <tbody>{providerList()}</tbody>
                 </table>
             </div>
+        */
         );
     }
