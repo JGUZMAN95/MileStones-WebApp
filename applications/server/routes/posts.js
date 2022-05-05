@@ -42,8 +42,12 @@ providerRoutes.route("/createPost").post(function(req,res){
     let db_connect = dbo.getDb("Milestones");
     let myObj = {
         rate: req.body.rate,
-        expirence: req.body.expirence,
+        //expirence: req.body.expirence,
         service: req.body.service,
+        name: req.body.name,
+        expOne: req.body.expOne,
+        expTwo: req.body.expTwo,
+        tnp: req.body.tnp,
     };
     db_connect.collection("Post").insertOne(myObj, function(e,result){
         if(e) throw err;
