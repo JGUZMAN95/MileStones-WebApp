@@ -1,9 +1,8 @@
+
 .createpost{
-    margin: auto;
-    display: block;
-    width: 1000px;
-    height: 1000px;
+    height: 900px;
 }
+
 .exp-dropdown {
     display: flex;
     margin-left: -20px;
@@ -12,18 +11,45 @@
 .formdiv{
     margin: auto;
     width: 900px;
-    height: 700px;
-    border: 1px solid black;
+    height: 850px;
+    border: 1px solid gainsboro;
+    background-color: #f6f6f6;
+    background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
+    border-radius: 10px;
     margin-top: 65px;
 }
+.cp-titlebox{
+    width: 400px;
+    height: 70px;
+    margin: auto;
+    margin-top: 50px;
+}
 
-.name-cp, .service-cp, .expirence-cp, .tnp-cp, .submit-cp, .exp-one, .exp-two,.rate-cp {
+.name-cp:focus, .service-cp:focus, .tnp-cp:focus, .exp-one:focus, .exp-two:focus,.rate-cp:focus {
+    border: 3px solid darkgray;
+}
+
+.name-cp, .service-cp, .submit-cp, .exp-one, .exp-two,.rate-cp {
     margin: auto;
     display: block;
     width: 40%;
     padding: 12px 20px;
-    left: 40px;
     margin-top: 50px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: sans-serif;
+}
+
+.tnp-cp{
+    margin: auto;
+    display: block;
+    width: 40%;
+    height: 100px;
+    padding: 12px 20px;
+    margin-top: 50px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: sans-serif;
 }
 .rate-span {
     display: flex;
@@ -31,7 +57,7 @@
 }
 
 .submit-cp {
-    font-size: 20px;
+    font-size: 25px;
     background: #256ce1;
     color: white;
 }
@@ -40,6 +66,19 @@
      background: #fff;
      color: #010606;
  }
+.submit-cp:active {
+    background-color: #256ce1;
+    box-shadow: 0 5px darkgray;
+    transform: translateY(4px);
+}
+
+.cp-title {
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    font-family: Poppins, sans-serif;
+}
 
 
 
