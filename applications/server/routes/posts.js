@@ -7,9 +7,11 @@ const providerRoutes = express.Router();
 
 // This will help us connect to the database
 const dbo = require("../db/conn");
-const bcrypt = require('bcryptjs');
+const bcrypt = require('bcrypt');
 // This help convert the id from string to ObjectId for the _id.
 const ObjectId = require("mongodb").ObjectId;
+
+const saltRounds = 10;
 
 
 // This section will help you get a list of all the records.
@@ -31,7 +33,7 @@ providerRoutes.route("/register").post(function (req, response) {
     let myobj = {
       name: req.body.name,
       email: req.body.email,
-      password: req.body.password,
+      password: bcrypt.hashSync(req.body.password, saltRounds),
     };
     db_connect.collection("User").insertOne(myobj, function (err, res) {
       if (err) throw err;
