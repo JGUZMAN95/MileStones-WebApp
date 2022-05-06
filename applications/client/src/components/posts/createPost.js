@@ -42,13 +42,21 @@ return(
     <div className={"createpost"}>
     <form onSubmit={onSubmit}>
         <div className={"formdiv"}>
+            <p className={"cp-title"} align={"center"}>Create a Listing</p>
     <input type="text" id="name" className={"name-cp"} value={form.name}
            onChange={(e)=> updateForm({name: e.target.value})} placeholder='Name'>
     </input>
 
-    <input type="text" id ="service" className={"service-cp"} value = {form.service}
+    <select id ="service" className={"service-cp"} value = {form.service}
            onChange={(e)=> updateForm({service: e.target.value})} placeholder ='Service'>
-    </input>
+        <option value={"service"}> What Services Are You Providing? </option>
+        <option value={"babysitting"}> BabySitter </option>
+        <option value={"daycare"}> DayCare </option>
+        <option value={"tutor"}> Tutor </option>
+        <option value={"music"}> Music Lessons </option>
+        <option value={"coach"}> Sports Coach </option>
+    </select>
+
     <div className={"exp-dropdown"}>
     <select className={"exp-one"} id={"exp-one"} value={form.expOne}
             onChange={(e)=> updateForm({expOne: e.target.value})}>
@@ -77,14 +85,15 @@ return(
     </input>
 
     <div className={'tnp-div'}>
-     <input type="text" id ="tnp" className={"tnp-cp"} value={form.tnp}
-           onChange={(e)=> updateForm({tnp: e.target.value})} placeholder ='Time/Place Service Being Conducted'>
-    </input>
+     <textarea type="text" id ="tnp" className={"tnp-cp"} value={form.tnp}
+           onChange={(e)=> updateForm({tnp: e.target.value})} placeholder ='Tell Us About Yourself'>
+    </textarea>
     </div>
     <input  type = 'submit' className={"submit-cp"} value = 'Post'>
     </input>
         </div>
     </form>
     </div>
+
 );
 }
