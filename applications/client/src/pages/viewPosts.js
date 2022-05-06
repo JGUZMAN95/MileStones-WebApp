@@ -1,19 +1,35 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./viewPosts.css"
-import { Card } from "react-bootstrap"
+import Card from 'react-bootstrap/Card'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row'
+import { CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
 
 
 const Providers = (props) => [
-    <Card style={{ width: "18rem" }} key={props._id} className="box">
+  <div class="container">
 
-            <Card.Img variant="top" src="holder.js/100px180"  />
-            <Card.Body>
-              <Card.Title>{props.provider.name}</Card.Title>
-              <Card.Text>{props.provider.rate}</Card.Text>
-            </Card.Body>
-            <Card.Footer>{props.provider.service}</Card.Footer>
-          </Card>
+  {Array.from({ length: 1 }).map((_, idx) => (
+    <Col md = {3}>
+      <Card style={{marginTop: 50, marginBottom: 50}}>
+        <Card.Img variant="top" width="100%" src='/babysit.jpg'/>
+        <Card.Body>
+          <Card.Title>{props.provider.name}</Card.Title>
+          <Card.Text>
+          {props.provider.rate}
+          </Card.Text>
+        </Card.Body>
+        <Card.Footer>{props.provider.service}</Card.Footer>
+      </Card>
+    </Col>
+  ))}
+
+  </div>
+
+
+
 ];
 
 
