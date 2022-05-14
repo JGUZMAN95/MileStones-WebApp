@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import "./viewPosts.css"
 import Card from 'react-bootstrap/Card'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -69,9 +68,9 @@ function SearchViewPosts() {
 
     return (
         <div className="grid">{providerList()}</div>
-    );
+    )
     
-    };
+    }
 
 
 

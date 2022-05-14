@@ -1,48 +1,45 @@
-import React, { useState } from "react"
+import React, { Component, useEffect, useState } from "react"
 import "./login.css"
 import drumBaby from '../../images/drum (2) 1.png'
 import abcdTeacher from '../../images/teacher (2) 1.png'
-import {useNavigate} from "react-router";
-//import bcrypt from "bcryptjs";
+import { useParams, useNavigate, useLocation } from "react-router-dom"
+export default function LogIn() {
 
-    export default function LogIn() {
-        const navigate = useNavigate();
-        const bcrypt = require('bcryptjs');
-
-        const [form, setForm] = useState( {
+    
+        const [user, setUser] = useState( {
             email:"",
             password:"",
         });
-
-        function updateForm(value){
-            form.passwordHash = bcrypt.hashSync(form.password, 10);
-            return setForm((prev)=>{
-                return{...prev, ...value};
-            });
-        }
-
-        async function onSubmit(e) {
-            e.preventDefault();
-
-            return('Loading...');
-            //need to work out hash
-            const login  = {...form};
-            await fetch('http://localhost:3001/loginInfo/',{
-                method:"POST",
-                headers:{
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(login)
+        const {login} = useParams();
+        const navigate = useNavigate();
+        const handleChange = e =>{
+            const {name,value} = e.target
+            setUser({
+            ...user,
+            [name]:value
             })
-                .catch(error => {
-                    window.alert(error);
-                    return;
-                });
+            }
 
-            //loggedin home
-            navigate("/")
-        }
+    function handleClick(){
+             fetch(`http://localhost:3001/login/`, {
+                 method: "POST",
+                 headers: {
+                     "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(user),
+                 })
+                 .catch(error => {
+                     window.alert(error);
+                     return;
+                    });
+                };
+    
+    useEffect(()=>{
+        handleClick();
+    },[user]);
 
+
+//e.preventDefault()
 
     return (
         <div className="log-in flex-col-hstart-vstart clip-contents">
@@ -50,18 +47,20 @@ import {useNavigate} from "react-router";
                 <div className="rectangle-3">
                     <p className="txt-957">Welcome Back</p>
 
-                    <form className = "login">
+                    <form className = "login" >
+
                         <input className="group-467 flex-row-vstart-hstart"
                                type = "email"
                                placeholder = "Email Address"
-                               value = {form.email}
-                               onChange={(e) => updateForm({email: e.target.value})}
-                        ></input>
+                               value = {user.email}
+                               name="email"
+                               onChange={handleChange}                        ></input>
                         <input className="group-075 flex-row-vstart-hstart"
-                               type = "password" placeholder = "Password"
-                               value = {form.password}
-                               onChange={(e) => updateForm({password: e.target.value})}
-                        ></input>
+                               type = "password" 
+                               placeholder = "Password"
+                               value = {user.password}
+                               name="password"
+                               onChange={handleChange}                        ></input>
 
                         <input type="checkbox" className ="checkbox"></input>
                         <label for="rmbme" className="txt-195">Remember me</label>
@@ -70,7 +69,7 @@ import {useNavigate} from "react-router";
                         <input className="frame-14 flex-row-vstart-hstart"
                                type = "submit"
                                value = "Log In"
-                               onSubmit={onSubmit}
+                               onClick={(e) => {login(e.preventDefault())}}
                         ></input>
                     </form>
 
@@ -93,5 +92,5 @@ import {useNavigate} from "react-router";
             />
             
         </div>
-    )
+    );
 }

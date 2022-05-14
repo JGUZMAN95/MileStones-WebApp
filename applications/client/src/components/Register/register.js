@@ -76,7 +76,8 @@ export default function CreateAccount() {
         //    className="form-control"
            id="name"
            value={form.name}
-           onChange={(e) => updateForm({ name: e.target.value })} placeholder = 'Full Name'></input>
+           onChange={(e) => updateForm({ name: e.target.value })} 
+           placeholder = 'Full Name'></input>
            </div>
                 
            <div className="form-group">
