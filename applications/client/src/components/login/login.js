@@ -39,7 +39,7 @@ export default function LogIn() {
     },[user]);
 
 
-//e.preventDefault()
+    //e.preventDefault()
 
     return (
         <div className="log-in flex-col-hstart-vstart clip-contents">
@@ -62,10 +62,10 @@ export default function LogIn() {
                                name="password"
                                onChange={handleChange}                        ></input>
 
-                        <input type="checkbox" className ="checkbox"></input>
+                        <input type="checkbox" className="checkbox"></input>
                         <label for="rmbme" className="txt-195">Remember me</label>
-                            
 
+                        {/* Submit Button */}
                         <input className="frame-14 flex-row-vstart-hstart"
                                type = "submit"
                                value = "Log In"
@@ -73,16 +73,13 @@ export default function LogIn() {
                         ></input>
                     </form>
 
-                    {/* needs account recovery page */}
-                    <p className="txt-232">Forgot Password</p>
-
                     <img
-                        src= {abcdTeacher}
+                        src={abcdTeacher}
                         alt="Not Found"
                         className="teacher-21"
                     />
                     <p className="txt-5107">Don’t have an account yet?</p>
-                    <a className="txt-192" href = './register'>Sign Up here!</a>
+                    <a className="txt-192" href='./register'>Sign Up here!</a>
                 </div>
             </div>
             <img
@@ -90,7 +87,7 @@ export default function LogIn() {
                 alt="Not Found"
                 className="drum-21"
             />
-            
+
         </div>
     );
 }
