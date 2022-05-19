@@ -21,7 +21,7 @@ export default function LogIn() {
             }
 
      function handleClick(){
-        if(user.password != "" && user.email != ""){
+        if((user.password != "" &&  user.password.length < 20 && user.password.length > 5) && user.email != ""){
              fetch(`http://localhost:3001/login/`, {
                  method: "POST",
                  headers: {
@@ -50,6 +50,7 @@ export default function LogIn() {
                 };
     
     useEffect(()=>{
+       
         handleClick();
     },[user]);
 

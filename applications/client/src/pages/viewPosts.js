@@ -22,7 +22,6 @@ const Providers = (props) => [
   </CardGroup>
 ];
 
-
 function SearchViewPosts() {
   //----------------------------------------------------------------
   const [providers, setProviders] = useState([]);
