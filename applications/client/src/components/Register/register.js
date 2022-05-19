@@ -50,7 +50,10 @@ export default function CreateAccount() {
       </div>
 
       <p className="txt-9109">Create Account</p>
+
+      {/* Start of Register form */}
       <form onSubmit={onSubmit}>
+        {/* User input for user's full name */}
         <div className="form-group">
           <input
             className="frame-3 flex-row-vstart-hstart txt-348"
@@ -58,9 +61,11 @@ export default function CreateAccount() {
             id="name"
             value={form.name}
             onChange={(e) => updateForm({ name: e.target.value })}
-            placeholder='Full Name'></input>
+            placeholder='Full Name'>
+          </input>
         </div>
 
+        {/* User input for their email address */}
         <div className="form-group">
           <input
             className="frame-5 flex-row-vstart-hstart txt-348"
@@ -68,9 +73,11 @@ export default function CreateAccount() {
             id="email"
             value={form.email}
             onChange={(e) => updateForm({ email: e.target.value })}
-            placeholder='Email Address'></input>
+            placeholder='Email Address'>
+          </input>
         </div>
-
+        
+        {/* User input for their password */}
         <div className="form-group">
           <input
             className="frame-4 flex-row-vstart-hstart txt-348"
@@ -82,6 +89,7 @@ export default function CreateAccount() {
           </input>
         </div>
 
+        {/* Toggle switch that determines whether a user is a Parent or a Provider */}
         <p className="txt-269">Are you a Parent or Provider?</p>
         <div className="signup-parent-provider switch-field">
           <input type="radio" id="radio-one" name="switch-one" value="Parent" checked />
@@ -89,18 +97,23 @@ export default function CreateAccount() {
           <input type="radio" id="radio-two" name="switch-one" value="Provider" />
           <label for="radio-two">Provider</label>
         </div>
+
+        {/* Submit Register form */}
         <div className='rectangle-signup'>
           <input className='rectangle-8' type='submit' value='Sign Up'></input>
         </div>
       </form>
+      {/* End of Register form */}
+
+      {/* Redirect to Login page */}
+      <p className="txt-335">Already have an account?</p>
+      <a className="txt-721" href='./login'>Log In here</a>
+      
       <img
         src={basketBro}
         alt="Not Found"
         className="basketball-1"
       />
-
-      <p className="txt-335">Already have an account?</p>
-      <a className="txt-721" href='./login'>Log In here</a>
       <img
         src={blockBaby}
         alt="Not Found"
