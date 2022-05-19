@@ -4,43 +4,40 @@ import drumBaby from '../../images/drum (2) 1.png'
 import abcdTeacher from '../../images/teacher (2) 1.png'
 import { useParams, useNavigate, useLocation } from "react-router-dom"
 export default function LogIn() {
-    // allows us to be able to call for url to pass as json to server
-    const {login} = useParams();
-        //need to be able to get user input from form and update constant changes
+
+    
         const [user, setUser] = useState( {
             email:"",
             password:"",
         });
-
+        const {login} = useParams();
         const navigate = useNavigate();
-        //updating the constanst change that the user is doing through out the form
-        //by setting the information that is in being passed over
-        function handleChange(value){
-           return setUser((prev)=>{
-               return{...prev, ...value}
-           })
-    }
-    //once user clicks on the submit button then we can get the url to be able
+        const handleChange = e =>{
+            const {name,value} = e.target
+            setUser({
+            ...user,
+            [name]:value
+            })
+            }
 
-    function onSubmit(){
-        // calling the server to be able to check if login info exsits
-        const response = fetch(`http://localhost:3001/login/`, {
+    function handleClick(){
+        if(user.password != "")
+             fetch(`http://localhost:3001/login/`, {
                  method: "POST",
                  headers: {
                      "Content-Type": "application/json",
                     },
-                    //passing in the url as a json since we want a return after a post
-                    //we need to pass as json
-                    body: JSON.stringify(login),
-                 });
-                 //Once message from server is captured we will check what response
-                 //we were given depending on that we stay in login or we go to signed in home page
-                 if(!response){
-                    navigate("/login")
-                 }else{
-                     navigate("/")
-                 }
-    }     
+                    body: JSON.stringify(user),
+                 })
+                 .catch(error => {
+                     window.alert(error);
+                     return;
+                    });
+                };
+    
+    useEffect(()=>{
+        handleClick();
+    },[user]);
 
 
 //e.preventDefault()
@@ -51,20 +48,20 @@ export default function LogIn() {
                 <div className="rectangle-3">
                     <p className="txt-957">Welcome Back</p>
 
-                    <form className = "login" onSubmit={onSubmit}>
+                    <form className = "login" >
 
                         <input className="group-467 flex-row-vstart-hstart"
                                type = "email"
                                placeholder = "Email Address"
                                value = {user.email}
                                name="email"
-                               onChange={(e)=>handleChange({email: e.target.value})}></input>
+                               onChange={handleChange}                        ></input>
                         <input className="group-075 flex-row-vstart-hstart"
                                type = "password" 
                                placeholder = "Password"
                                value = {user.password}
                                name="password"
-                               onChange={(e)=>handleChange({password: e.target.value})}></input>
+                               onChange={handleChange}                        ></input>
 
                         <input type="checkbox" className ="checkbox"></input>
                         <label for="rmbme" className="txt-195">Remember me</label>
@@ -73,7 +70,7 @@ export default function LogIn() {
                         <input className="frame-14 flex-row-vstart-hstart"
                                type = "submit"
                                value = "Log In"
-                               //onClick={(e) => {login(e.preventDefault())}}
+                               onClick={(e) => {login()}}
                         ></input>
                     </form>
 
