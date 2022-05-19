@@ -14,14 +14,14 @@ code {
 
 
 :root {
-  --black-2: 
-rgba(0, 0, 0, 0.58);
-  --black: 
-rgba(0, 0, 0, 1);
-  --gray-nurse: 
-rgba(233, 233, 233, 1);
-  --white: 
-rgba(255, 255, 255, 1);
+  --black-2:
+    rgba(0, 0, 0, 0.58);
+  --black:
+    rgba(0, 0, 0, 1);
+  --gray-nurse:
+    rgba(233, 233, 233, 1);
+  --white:
+    rgba(255, 255, 255, 1);
 
   --font-size-s: 12px;
   --font-size-m: 20px;
@@ -43,11 +43,13 @@ rgba(255, 255, 255, 1);
   font-weight: 400;
   font-style: normal;
 }
+
 .border-1px-gray-nurse {
   border-width: 1px;
   border-style: solid;
   border-color: var(--gray-nurse);
 }
+
 .poppins-normal-black-12px {
   color: var(--black);
   font-family: var(--font-family-poppins);
