@@ -16,7 +16,7 @@ export default function CreateAccount() {
       
       // These methods will update the state properties.
       function updateForm(value) {
-        return setForm((prev) => {
+        return setForm ((prev) => {
           return { ...prev, ...value };
         });
       }
