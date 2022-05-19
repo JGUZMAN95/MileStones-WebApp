@@ -22,35 +22,21 @@ export default function LogIn() {
 
      function handleClick(){
         if((user.password != "" &&  user.password.length < 20 && user.password.length > 5) && user.email != ""){
-             fetch(`http://localhost:3001/login/`, {
+             const response = fetch(`http://localhost:3001/login/`, {
                  method: "POST",
                  headers: {
                      "Content-Type": "application/json",
                     },
                     body: JSON.stringify(user),
                  })
-                 .then( result => {
-                    const response = JSON.stringify(result)
-                        const d = new Date();
-                        d.setTime(d.getTime() + (2 * 24 * 60 * 60 * 1000));
-                        let expires = "expires="+d.toUTCString();
-                        document.cookie = user.email + "=" + user.password + ";" + expires + ";path=/";
-                      
-                     navigate("/");
-                 },reason=>{
-                     navigate("/login")
-                     const response = JSON.stringify(reason)
-                 })
-                 .catch(error => {
-                     window.alert(error);
-                     return;
-                    })
-                }
-                    
-                };
+                 .then( result => result.statusText())
+                 .then( result =>  window.alert(result))
+                 .then(navigate("/"))
+                }};
+
+                
     
     useEffect(()=>{
-       
         handleClick();
     },[user]);
 
