@@ -38,7 +38,7 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-            { <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-milestone-achievements-flaticons-lineal-color-flat-icons.png"/> }
+              {<img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-milestone-achievements-flaticons-lineal-color-flat-icons.png" />}
             </Link>
           </div>
           <small class='website-rights'>Milestones2022 © SFSU</small>
@@ -53,7 +53,7 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link instagram'
-              to= "instagram.com"
+              to="instagram.com"
               target='_blank'
               aria-label='Instagram'
             >
