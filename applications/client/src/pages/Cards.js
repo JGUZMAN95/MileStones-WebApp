@@ -13,13 +13,13 @@ function Cards() {
               src='/babysit.jpg'
               text='Babysitting Description TBD'
               label='Babysitting'
-              path='/viewPosts/Babysitters'
+              path='/viewPosts'
             />
             <CardItem
               src='/tutor.jpg'
               text='Tutor Description TBD'
               label='Tutoring'
-              path='/viewPosts/Tutors'
+              path='/viewPosts'
             />
           </ul>
           <ul className='cards__items'>
@@ -27,19 +27,19 @@ function Cards() {
               src='/daycare.jpg'
               text='Daycare Description TBD'
               label='DayCare'
-              path='/viewPosts/Daycare'
+              path='/viewPosts'
             />
             <CardItem
               src='/piano.jpg'
               text='Lessons Description TBD'
               label='Lessons'
-              path='/viewPosts/Lessons'
+              path='/viewPosts'
             />
             <CardItem
               src='/hack.jpg'
               text='Teach your children how to hack'
               label='Coaches'
-              path='/viewPosts/Coaches'
+              path='/viewPosts'
             />
           </ul>
         </div>
