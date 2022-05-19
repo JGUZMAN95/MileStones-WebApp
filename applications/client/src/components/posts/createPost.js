@@ -9,7 +9,9 @@ export default function CreatePost(){
         expTwo:"",
       //  expirence:"",
         rate:"",
-        tnp:""
+        tnp:"",
+        phone: ""
+
     });
     // These methods will update the state properties.
     function updateForm(value) {
@@ -36,7 +38,7 @@ export default function CreatePost(){
             return;
         });
 
-    setForm({ name: "", service: "", expOne:"", expTwo:"", rate: "",tnp:"" });
+    setForm({ name: "", service: "", expOne:"", expTwo:"", rate: "",tnp:"", phone:"" });
 }
 return(
     <div className={"createpost"}>
@@ -47,6 +49,10 @@ return(
            onChange={(e)=> updateForm({name: e.target.value})} placeholder='Name'>
     </input>
 
+    <input type="phone" id="phone" className={"phone-cp"} value={form.phone}
+            onChange={(e) => updateForm({phone: e.target.value})} placeholder='Phone Number'>
+
+    </input>
     <select id ="service" className={"service-cp"} value = {form.service}
            onChange={(e)=> updateForm({service: e.target.value})} placeholder ='Service'>
         <option value={"service"}> What Services Are You Providing? </option>
