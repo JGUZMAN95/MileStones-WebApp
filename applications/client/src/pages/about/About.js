@@ -5,21 +5,25 @@ const About = () => {
     const navigate = useNavigate();
 
     return (
-        <div style={{ textAlign: "center" }}>
+        <div style={{ textAlign: "center", marginTop: '40px', marginBottom: '40px'}}>
+            <h1>Meet our team!</h1>
+            <br/>
             <h2>
-            Software Engineering Class SFSU <br/>
+            We are Team 01 in <br/>
+            Software Engineering Class @ SFSU <br/>
             Spring 2022 <br/>
-            Section 1 <br/>
-            Team 1
             </h2>
 
             <br/>
-            <button onClick={() => navigate('jocelyn')}>Jocelyn Guzman</button><br/><br/>
-            <button onClick={() => navigate('edel')}>Edel Jhon Cenario</button><br/><br/>
-            <button onClick={() => navigate('anthony')}>Anthony Zhang</button><br/><br/>
-            <button onClick={() => navigate('miroslav')}>Miroslav Stavrev</button><br/><br/>
-            <button onClick={() => navigate('hira')}>Hira Afzal</button><br/><br/>
-            <button onClick={() => navigate('ansel')}>Ansel Ngai</button>
+            
+            <button style={{marginRight: '20px', width: '20%'}} onClick={() => navigate('jocelyn')}>Jocelyn Guzman</button> 
+            <button style={{marginRight: '20px', width: '20%'}}onClick={() => navigate('edel')}>Edel Jhon Cenario</button>
+            <br/><br/>
+            <button style={{marginRight: '20px', width: '15%'}}onClick={() => navigate('miroslav')}>Miroslav Stavrev</button>
+            <button style={{marginRight: '20px', width: '15%'}}onClick={() => navigate('hira')}>Hira Afzal</button>
+            <button style={{marginRight: '20px', width: '15%'}}onClick={() => navigate('ansel')}>Ansel Ngai</button>
+            
+
         </div>
     );
 }

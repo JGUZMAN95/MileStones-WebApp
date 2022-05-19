@@ -3,7 +3,7 @@ import anselPic from '../../images/picture of ansel.PNG'
 
 const AboutAnsel = () => {
     return (
-        <div style={{ padding: "0 1% 0 1%" }}>
+        <div style={{ padding: "0 1% 0 1%", marginTop: '40px', marginBottom: '40px'}}>
             <img src={anselPic} width="250px" height="250px" alt="picture of ansel"/>
 
             <h1>Ansel Ngai</h1>

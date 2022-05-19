@@ -3,7 +3,7 @@ import miroslavPic from '../../images/pictureOfMiroslav.jpg'
 
 const AboutMiroslav = () => {
     return (
-        <div style={{ padding: "0 1% 0 1%" }}>
+        <div style={{ padding: "0 1% 0 1%", marginTop: '40px', marginBottom: '40px' }}>
             <img src={miroslavPic} width="250px" height="250px" alt="default"/>
 
             <h1>Miroslav Stavrev</h1>

@@ -3,7 +3,7 @@ import hiraPic from '../../images/default about picture.png'
 
 const AboutHira = () => {
     return (
-        <div style={{ padding: "0 1% 0 1%" }}>
+        <div style={{ padding: "0 1% 0 1%", marginTop: '40px', marginBottom: '40px'}}>
             <img src={hiraPic} width="250px" height="250px" alt="default"/>
 
             <h1>Hira Afzal</h1>
