@@ -1,6 +1,6 @@
 # csc648-spring22-01-Team01 Repository
 
-## Application URL: http://184.72.11.58:3000/
+## Application URL: [Milestones.com](https://milestones-350703.wl.r.appspot.com/)
 
 
 ## Please do the following steps before completing Milestone 0.
