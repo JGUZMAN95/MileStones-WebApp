@@ -3,7 +3,7 @@ import anthonyPic from '../../images/picture of anthony.jpg'
 
 const AboutAnthony = () => {
     return (
-        <div style={{ padding: "0 1% 0 1%" }}>
+        <div style={{ padding: "0 1% 0 1%", marginTop: '40px', marginBottom: '40px' }}>
             <img src={anthonyPic} width="250px" height="250px" alt="Anthony's profile picture"/>
 
             <h1>Anthony Zhang</h1>

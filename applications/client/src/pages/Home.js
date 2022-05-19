@@ -1,11 +1,11 @@
 import React from "react";
 import "./home.css";
-import Footer from './Footer';
 import Cards from './Cards';
-
+import Milestone from './Hero/Hero';
 function Home() {
   return (
     <>
+      <Milestone />
       <Cards />
     </>
   );
