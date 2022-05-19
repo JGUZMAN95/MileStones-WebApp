@@ -76,13 +76,15 @@ export default function CreatePost() {
                             <option value={'nine'}> 9 </option>
                             <option value={'ten'}> 10 </option>
                         </select>
-
+                        
                         <select className={'exp-two'} id={"exp-two"} value={form.expTwo} /* Amount of experience in months*/
                             onChange={(e) => updateForm({ expTwo: e.target.value })}>
                             <option value={'month'}> mo. </option>
                             <option value={'years'}> yrs. </option>
                         </select>
                     </div>
+
+
                     <input type="number" min={'0.01'} step={"0.01"} id="rate" className={"rate-cp"} value={form.rate} // Rate of the service in $$
                         onChange={(e) => updateForm({ rate: e.target.value })} placeholder='Hourly Rate in $'>
                     </input>
