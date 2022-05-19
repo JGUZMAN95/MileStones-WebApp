@@ -25,6 +25,7 @@ import { BrowserRouter } from "react-router-dom";
  * 4) Finally, add the page to the Routes section beneath the links */
 const App = () => {
   const [user,setLoginUser] = useState({})
+  const[providers, setProvider] = useState({})
   return (
     <div className="App">
     <Router>
@@ -52,9 +53,8 @@ const App = () => {
         <Route path ="/ProviderRegister" element={<ProviderRegister />}/>
 
         <Route path="/childprofile" element={<ChildProfile />}/>
-        <Route path="/viewPosts" element={<ViewPosts />}/>
-
-*/}
+        <Route path="/viewPosts" element={<ViewPosts />}/>*/}
+        
         <Route exact path="/about" element={<About />}/>
         <Route exact path="/about/jocelyn" element={<AboutJocelyn />}/>
         <Route exact path="/about/edel" element={<AboutEdel />}/>
