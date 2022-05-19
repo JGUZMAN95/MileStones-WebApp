@@ -10,14 +10,13 @@ import AboutHira from './pages/about/AboutHira';
 import AboutAnsel from './pages/about/AboutAnsel';
 import SignIn from "./components/login/login";
 import Register from "./components/Register/register";
-import Profile from "./components/profile/profile.js";
-import ChildProfile from "./components/profile/childprofile.js";
 import ViewPosts from "./pages/viewPosts";
 import Navbar from './components/Navbar';
 import CreatePost from "./components/posts/createPost";
 import Footer from './pages/Footer';
 import { useState } from 'react';
 import { BrowserRouter } from "react-router-dom";
+
 
 /* 1) To create a new page, create a new .js file in the pages folder
  * 2) Next, in this file, import the .js file using its path as shown above
@@ -28,7 +27,6 @@ const App = () => {
   return (
     <div className="App">
       <Router>
-
         <Navbar />
         <Routes>
 
