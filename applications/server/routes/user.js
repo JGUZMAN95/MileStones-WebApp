@@ -13,6 +13,7 @@ const saltRounds = 10;
 // get driver connection
 // This section will help you create a new record.
 user.route("/register").post(function (req, response) {
+  if (err) throw err;
     let db_connect = dbo.getDb("Milestones");
 
     let myobj = {
@@ -21,7 +22,6 @@ user.route("/register").post(function (req, response) {
       password: bcrypt.hashSync(req.body.password, saltRounds),
     };
     db_connect.collection("User").insertOne(myobj, function (err, res) {
-      if (err) throw err;
       response.json(res);
     });
   });
@@ -36,14 +36,17 @@ user.route("/login").post(function (req,res){
 db_connect
 .collection("User").findOne({email:myobj.email}, async function(err,user){
   const result1 = await bcrypt.compare(myobj.password, user.password);
-      if(result1){
-          //console.log(user);
+      if(!result1){
+        console.log("Credentials wrong");
+        res.status(500).send(err)
+         
+      }else{
+         //console.log(user);
           //console.log(myobj.password)
           console.log("Success");
-          res.json(user)
-      }else{
-        //console.log("Credentials wrong");
-         res.json({data: "Login invalid"})
+          res.cookie("name", user.name)
+          res.status(200).send('cookie SET')
+       
       }
               
   })
