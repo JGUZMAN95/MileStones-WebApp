@@ -29,18 +29,18 @@ user.route("/register").post(function (req, response) {
 //login
 //http://localhost:3000/login?email=testingCrypt%40gmail.com&password=hello
 user.route("/login").post(function (req,res){
-    let db_connect = dbo.getDb("Milestones");
-    const {email,password} = req.body;
+  let db_connect = dbo.getDb("Milestones");
+  const {email,password} = req.body;
 db_connect
 .collection("User").findOne({email:email},(err,user)=>{
-        if(!user || !bcrypt.compare(password, user.password) ){
-            console.log("Wrong creds");
-            res.send({message:"wrong credentials"})
-        }else{
-            console.log("Successfully Logged in");
-        }
-                
-    })
+      if(!user || !bcrypt.compare(password, user.password) ){
+          console.log("Wrong creds");
+          res.send({message:"wrong credentials"})
+      }else{
+          console.log("Successfully Logged in");
+      }
+              
+  })
 });
 
 module.exports = user;
