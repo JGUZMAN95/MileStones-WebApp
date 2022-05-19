@@ -30,14 +30,21 @@ user.route("/register").post(function (req, response) {
 //http://localhost:3000/login?email=testingCrypt%40gmail.com&password=hello
 user.route("/login").post(function (req,res){
   let db_connect = dbo.getDb("Milestones");
-  const {email,password} = req.body;
+  let myobj =  {email: req.body.email,
+                password: req.body.password};
 db_connect
-.collection("User").findOne({email:email},(err,user)=>{
-      if(!user || !bcrypt.compare(password, user.password) ){
-          console.log("Wrong creds");
-          res.send({message:"wrong credentials"})
+.collection("User").findOne({email:myobj.email}, async function(err,user){
+  const result1 = await bcrypt.compare(myobj.password, user.password);
+      if(result1){
+          console.log(user);
+          console.log(myobj.password)
+          console.log("Success");
+          res.json(user)
+
+
       }else{
-          console.log("Successfully Logged in");
+        console.log("Credentials wrong");
+        res.json({data: "Login invalid"})
       }
               
   })
