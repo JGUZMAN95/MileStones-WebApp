@@ -90,7 +90,7 @@ export default function CreateAccount() {
           <label for="radio-two">Provider</label>
         </div>
         <div className='rectangle-signup'>
-          <input className='rectangle-8' type='submit' value='Sign Up'></input>
+          <input className='rectangle-8' type='submit' value='Sign Up' style={{textAlign: 'center'}}></input>
         </div>
       </form>
       <img

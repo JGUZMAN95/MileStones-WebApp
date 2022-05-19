@@ -9,7 +9,7 @@ function Footer() {
       <div class='footer-links'>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <h2>About Us</h2>
+            <h2>Our Team</h2>
             <Link to='/about/jocelyn'>Jocelyn</Link>
             <Link to='/about/edel'>Edel</Link>
             <Link to='/about/miroslav'>Miroslav</Link>
@@ -19,11 +19,11 @@ function Footer() {
         </div>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <h2>Users</h2>
-            <Link to='/'>Parents</Link>
-            <Link to='/'>Providers</Link>
-            <Link to='/'>Sponsors</Link>
-            <Link to='/'>Agency</Link>
+            <h2>Milestones</h2>
+            <Link to='/createPost'>Create Posts</Link>
+            <Link to='/viewPosts'>View Posts</Link>
+            <Link to='/register'>Sign Up</Link>
+            <Link to='/login'>Sign In</Link>
           </div>
           <div class='footer-link-items'>
             <h2>Social Media</h2>
@@ -41,7 +41,7 @@ function Footer() {
               {<img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-milestone-achievements-flaticons-lineal-color-flat-icons.png" />}
             </Link>
           </div>
-          <small class='website-rights'>Milestones2022 © SFSU</small>
+          <small class='website-rights'>Milestones est. 2022 © SFSU</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
