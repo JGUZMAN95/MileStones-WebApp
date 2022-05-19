@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import PlanetOne from './triangle.png';
-import PlanetTwo from './square.png';
-import PlanetThree from './circle.png';
-import PlanetFour from './star.png';
+import Triangle from './triangle.png';
+import Square from './square.png';
+import Circle from './circle.png';
+import Star from './star.png';
 
 const Section = styled.section`
   height: 100vh;
@@ -113,7 +113,7 @@ const Hero = () => {
         </ColumnLeft>
         <ColumnRight>
           <Image
-            src={PlanetOne}
+            src={Triangle}
             alt='planet'
             whileTap={{ scale: 0.9 }}
             drag={true}
@@ -122,7 +122,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
           />
           <Image
-            src={PlanetTwo}
+            src={Square}
             alt='planet'
             whileTap={{ scale: 0.6 }}
             drag={true}
@@ -131,7 +131,7 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0, transition: { duration: 1 } }}
           />
           <Image
-            src={PlanetThree}
+            src={Circle}
             alt='planet'
             whileTap={{ scale: 0.8 }}
             drag={true}
@@ -140,7 +140,7 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0, transition: { duration: 1 } }}
           />
           <Image
-            src={PlanetFour}
+            src={Star}
             alt='planet'
             whileTap={{ scale: 0.9 }}
             drag={true}
