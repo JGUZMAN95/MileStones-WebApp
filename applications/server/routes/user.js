@@ -32,19 +32,18 @@ user.route("/login").post(function (req,res){
   let db_connect = dbo.getDb("Milestones");
   let myobj =  {email: req.body.email,
                 password: req.body.password};
+                
 db_connect
 .collection("User").findOne({email:myobj.email}, async function(err,user){
   const result1 = await bcrypt.compare(myobj.password, user.password);
       if(result1){
-          console.log(user);
-          console.log(myobj.password)
+          //console.log(user);
+          //console.log(myobj.password)
           console.log("Success");
           res.json(user)
-
-
       }else{
-        console.log("Credentials wrong");
-        res.json({data: "Login invalid"})
+        //console.log("Credentials wrong");
+         res.json({data: "Login invalid"})
       }
               
   })
