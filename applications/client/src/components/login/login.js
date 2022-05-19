@@ -20,8 +20,8 @@ export default function LogIn() {
             })
             }
 
-    function handleClick(){
-        if(user.password != "")
+     function handleClick(){
+        if(user.password != "" && user.email != ""){
              fetch(`http://localhost:3001/login/`, {
                  method: "POST",
                  headers: {
@@ -29,10 +29,24 @@ export default function LogIn() {
                     },
                     body: JSON.stringify(user),
                  })
+                 .then( result => {
+                    const response = JSON.stringify(result)
+                        const d = new Date();
+                        d.setTime(d.getTime() + (2 * 24 * 60 * 60 * 1000));
+                        let expires = "expires="+d.toUTCString();
+                        document.cookie = user.email + "=" + user.password + ";" + expires + ";path=/";
+                      
+                     navigate("/");
+                 },reason=>{
+                     navigate("/login")
+                     const response = JSON.stringify(reason)
+                 })
                  .catch(error => {
                      window.alert(error);
                      return;
-                    });
+                    })
+                }
+                    
                 };
     
     useEffect(()=>{
