@@ -50,14 +50,12 @@ p {
 }
 
 .rectangle-3 {
-  background: linear-gradient(
-          180deg,
-          rgba(255, 255, 255, 1) 0%,
-          rgba(235, 252, 244, 1) 0%,
-          rgba(234, 251, 244, 0.99) 0%,
-          rgba(235, 252, 244, 1) 15%,
-          rgba(174, 194, 245, 0.47) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(235, 252, 244, 1) 0%,
+      rgba(234, 251, 244, 0.99) 0%,
+      rgba(235, 252, 244, 1) 15%,
+      rgba(174, 194, 245, 0.47) 100%);
   /*transform: rotate(NaNdeg);*/
   width: 1000px;
   border-radius: 50px;
@@ -263,5 +261,5 @@ p {
   text-align: center;
   justify-content: center;
   width: 100%;
-  
+
 }
