@@ -6,11 +6,14 @@ import { useParams, useNavigate, useLocation } from "react-router-dom"
 export default function LogIn() {
 
     
-        const [user, setUser] = useState( {
+    const [user, setUser] = useState({
+        email:"",
+        password:""
+    })
+        const [login, setLogin] = useState({
             email:"",
-            password:"",
-        });
-        const {login} = useParams();
+            password:""
+        })
         const navigate = useNavigate();
         const handleChange = e =>{
             const {name,value} = e.target
@@ -20,21 +23,20 @@ export default function LogIn() {
             })
             }
 
+        
      function handleClick(){
-        if((user.password != "" &&  user.password.length < 20 && user.password.length > 5) && user.email != ""){
-             const response = fetch(`http://localhost:3001/login/`, {
+        if((login.password != "" &&  login.password.length < 20 && user.password.length > 5) && login.email != ""){
+             const response = fetch(`https://milestonesmern.herokuapp.com/login/`, {
                  method: "POST",
                  headers: {
                      "Content-Type": "application/json",
                     },
-                    body: JSON.stringify(user),
+                    body: JSON.stringify(login),
                  })
-                 .then( result => result.statusText())
-                 .then( result =>  window.alert(result))
+                 .then( result => result.status)
+                 .then( result =>  result.toString)
                  .then(navigate("/"))
                 }};
-
-                
     
     useEffect(()=>{
         handleClick();
@@ -71,7 +73,7 @@ export default function LogIn() {
                         <input className="frame-14 flex-row-vstart-hstart"
                                type = "submit"
                                value = "Log In"
-                               onClick={(e) => {login()}}
+                               onClick={(e) => {setLogin(user)}}
                         ></input>
                     </form>
 
